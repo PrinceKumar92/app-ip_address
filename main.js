@@ -56,6 +56,7 @@ function getFirstIpAddress(cidrStr, callback) {
   We will make several positive and negative tests.
 */
 function main() {
+     module.exports.getIpv4MappedIpv6Address = getIpv4MappedIpv6Address;
   // Create some test data for getFirstIpAddress(), both valid and invalid.
   let sampleCidrs = ['172.16.10.0/24', '172.16.10.0 255.255.255.0', '172.16.10.128/25', '192.168.1.216/30'];
   let sampleCidrsLen = sampleCidrs.length;
